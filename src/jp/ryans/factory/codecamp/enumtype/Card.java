@@ -1,4 +1,4 @@
-package jp.codecamp.enumtype;
+package jp.ryans.factory.codecamp.enumtype;
 
 import java.util.ArrayList;
 

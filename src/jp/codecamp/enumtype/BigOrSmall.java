@@ -1,5 +1,8 @@
 package jp.codecamp.enumtype;
 
+/**
+ * BigOrSmall メインクラス
+ */
 public class BigOrSmall {
 
 	/**

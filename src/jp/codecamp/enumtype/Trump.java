@@ -1,6 +1,3 @@
-/**
- *
- */
 package jp.codecamp.enumtype;
 
 import java.util.ArrayList;

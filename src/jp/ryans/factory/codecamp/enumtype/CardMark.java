@@ -41,7 +41,7 @@ public enum CardMark {
 	 * @return
 	 */
 	public String getMarkName() {
-		return markName;
+		return this.markName;
 	}
 
 	/**
@@ -49,6 +49,6 @@ public enum CardMark {
 	 * @return
 	 */
 	public int getLevel() {
-		return level;
+		return this.level;
 	}
 }

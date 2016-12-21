@@ -4,10 +4,21 @@ package jp.ryans.factory.codecamp.enumtype;
  * カードマーク
  */
 public enum CardMark {
-	/* カードのマーク */
+	/**
+	 *  カードのマーク クラブ 
+	 */
 	Clubs("クラブ", 0),
+	/**
+	 *  カードのマーク ダイヤ 
+	 */
 	Diamond("ダイヤ", 1),
+	/**
+	 *  カードのマーク ハート 
+	 */
 	Heart("ハート", 2),
+	/**
+	 *  カードのマーク スペード 
+	 */
 	Spade("スペード", 3);
 
 	/* マークの名前 */

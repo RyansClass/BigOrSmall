@@ -37,7 +37,12 @@ public class Chips {
 	 * @param tableChip 受け取るチップ数
 	 */
 	public void payOff(long tableChip) {
-		value += tableChip;
+		// オーバーフローを起こした場合は、受け取るチップ数とする
+		if( 0 > value + tableChip ) {
+			value = tableChip;
+		} else {
+			value += tableChip;
+		}
 	}
 	/**
 	 * 勝利したときの報酬を計算する

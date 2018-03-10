@@ -3,7 +3,7 @@ package jp.ryans.factory.codecamp.factorytype;
 public class Factory {
 
 	enum Objects {
-		BigOrSmall,Trump,Card,Tip
+		BigOrSmall,WarGame,Trump,Card,Tip
 	}
 
 

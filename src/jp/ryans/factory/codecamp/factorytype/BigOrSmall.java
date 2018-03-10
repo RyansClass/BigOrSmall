@@ -36,7 +36,7 @@ package jp.ryans.factory.codecamp.factorytype;
  */
 public class BigOrSmall extends GameRule {
 
-	static final int START_TIPS = 100;
+	static final long START_TIPS = Tips.TEN_TIPS_VALUE * 10;
 	
 	@Override
 	public int run() {

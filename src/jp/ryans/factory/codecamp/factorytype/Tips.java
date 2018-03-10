@@ -9,7 +9,9 @@ package jp.ryans.factory.codecamp.factorytype;
  */
 public class Tips {
 	
-	private final long TIPS_SUMARY = 10;
+	public static final long TEN_TIPS_VALUE = 10;
+	
+	private final long TIPS_SUMARY = TEN_TIPS_VALUE;
 	
 	private final long MAX = 20;
 	

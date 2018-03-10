@@ -11,7 +11,7 @@ public class Tips {
 	
 	public static final long TEN_TIPS_VALUE = 10;
 	
-	private final long TIPS_SUMARY = TEN_TIPS_VALUE;
+	private final long TIPS_SUMMARY = TEN_TIPS_VALUE;
 	
 	private final long MAX = 20;
 	
@@ -19,17 +19,20 @@ public class Tips {
 	
 	private long value;
 	
-	Tips(long initValue) {
-		this.value = initValue;
+	Tips() {
+		this.value = 0;
 	}
 	
+	public void setValue(long value) {
+		this.value = value;
+	}
 	
 	public long getTenTipsValue() {
-		return value / TIPS_SUMARY;
+		return value / TIPS_SUMMARY;
 	}
 	
 	public long getOwnTipsValue() {
-		return value % TIPS_SUMARY;
+		return value % TIPS_SUMMARY;
 	}
 	
 	/**

@@ -23,9 +23,10 @@ public abstract class GameRule {
 	 * ゲームの状態もしくは遷移すべき状態
 	 */
 	public enum State {
-		GAME_END,GAME_START,PRE_START_VIEW
+		GAME_INIT,GAME_END,GAME_START,PRE_START_VIEW
 	}
 
+	public abstract State init();
 	/**
 	 * ゲームを開始する
 	 * @return 正常に終了した場合は０を返却し、エラーが発生した場合は１を返却する

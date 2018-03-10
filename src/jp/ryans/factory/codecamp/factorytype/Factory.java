@@ -3,7 +3,7 @@ package jp.ryans.factory.codecamp.factorytype;
 public class Factory {
 
 	enum Objects {
-		BigOrSmall,WarGame,Trump,Card,Tip
+		BigOrSmall,WarGame,Trump,Card,Tips
 	}
 
 
@@ -19,6 +19,10 @@ public class Factory {
 			obj = new BigOrSmall();
 
 			break;
+			
+		case Tips:
+			
+			obj = new Tips();
 
 		default:
 			break;

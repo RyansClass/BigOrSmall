@@ -47,10 +47,6 @@ public class BigOrSmall extends GameRule {
 		while ( GameRule.State.GAME_END != state) {
 			// 次の状態に遷移（メソッドを呼び出す）する
 			switch (state) {
-			case GAME_INIT:
-				// ゲームの初期化
-				state = init();
-				break;
 			case GAME_START:
 				// ゲームの開始を表示する
 				state = viewPreStart(null);
@@ -78,12 +74,12 @@ public class BigOrSmall extends GameRule {
 	}
 
 	@Override
-	public State init() {
+	public int init(InitialData param) {
 		// チップクラスのインスタンスを生成
 		tips = (Tips) Factory.getNewInstance(Factory.Objects.Tips);
 		// 要件項目１
 		tips.setValue(START_TIPS);
 		
-		return null;
+		return SUCCESS;
 	}
 }

@@ -15,6 +15,7 @@ public class Main {
 	 */
 	public static void main(String[] args) {
 
+		InitialData param = new InitialData();
 		// プログラムの引数を検査
 		Factory.Objects gameName = null;
 		if (0 != args.length) {
@@ -25,6 +26,7 @@ public class Main {
 			if (GameRule.ARG_GAME_NAME_2.equals(args[0])) {
 				gameName = Factory.Objects.WarGame;
 			}
+			param.put("GameName",args[0]);
 			// バージョンの選択
 
 		} else {
@@ -34,8 +36,12 @@ public class Main {
 		}
 		// ゲームクラスのインスタンスを取得
 		GameRule game = (GameRule) Factory.getNewInstance(gameName);
+		// ゲームの初期化
+		int result = game.init(param);
 		// ゲームを実行
-		int result = game.run();
+		if (GameRule.SUCCESS == result) {
+			result = game.run();
+		}
 		// プログラム結果を返却
 		System.exit(result);
 	}
